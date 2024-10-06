@@ -10,6 +10,6 @@ for f in files_list:
     
     f_new_name = f # copy the original name
     if r in f_new_name:
-      f_new_name.replace(r,"") # remove sample_site from your file
+      f_new_name = f_new_name.replace(r,"") # remove sample_site from your file
       
     os.rename(f, f_new_name) # rename the file with new name
